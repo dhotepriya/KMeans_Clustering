@@ -243,7 +243,7 @@ if model is not None and df is not None:
             st.markdown("### 💡 Cluster Insights")
            
             # Calculate cluster statistics from original data
-            clustered_data = pd.read_csv("Clusteres_data.csv")
+            clustered_data = pd.read_csv("clusteres_data.csv")
             cluster_stats = clustered_data[clustered_data['cluster'] == cluster]
            
             st.markdown(f"""
@@ -337,4 +337,5 @@ st.markdown("""
     <div style='text-align: center; color: white; padding: 20px;'>
     <p>🛍️ Mall Customer Clustering Analysis | Powered by K-Means & Decision Tree ML Models</p>
     </div>
+
 """, unsafe_allow_html=True)
